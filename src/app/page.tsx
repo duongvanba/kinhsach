@@ -28,7 +28,7 @@ const BibleList = [
     star: true
   },
   {
-    name: 'Kinh Thờ Lạy',
+    name: 'Kinh thờ lạy',
     content: `Lạy Chúa con, con là vật phàm hèn cùng là không trước mặt Chúa, con hết lòng thờ lạy và nhận thật. Chúa là đầu cội rễ mọi sự, là cùng sau hết mọi loàị Chúa đã dựng nên con cùng thật là Chúa con nữa, thì con xin dâng linh hồn và xác, cùng mọi sự trong ngoài con ở trong tay Chúa. Amen.`
   },
   {
@@ -100,7 +100,7 @@ const BibleList = [
     content: `Con thân Đức Thánh Thiên Thần, tính thiêng liêng sáng láng, con cám ơn Đức Thánh Thiên Thần giữ con từ thuở mới sinh đến nay cho khỏi tay quỉ. Đức Thánh Thiên Thần là thầy con, mở lòng cho con biết được đạo thánh Chúa Trời đất. Vì vậy con cầu cùng Đức Thánh Thiên Thần giữ con ban ngày, xem con ban đêm, cho đến trọn đời, kẻo ma quỉ dữ cám dỗ được con. Con lạy Đức Thánh Thiên Thần khấn nguyện cho con thông minh sáng láng, giữ mười sự răn, chừa mọi sự dữ, đến khi con lâm chung, xin cùng Đức Chúa Trời cho linh hồn con được lên ở cùng Đức Chúa Trời và Thánh Thiên Thần hằng sống vui vẻ đời đời chẳng cùng. Amen.`
   },
   {
-    name: 'Kinh Lạy Nữ Vương',
+    name: 'Kinh Lạy nữ Vương',
     content: `Lạy Nữ Vương, Mẹ nhân lành làm cho chúng con được sống, được vui, được cậy. Thân lạy Mẹ! chúng con, con cháu E-và ở chốn khách đày kêu đến cùng bà, chúng con ở nơi khóc lóc than thở kêu khẩn bà thương. Hỡi Ôi! Bà là Chủ bầu chúng con, xin ghé mặt thương xem chúng con đến sau khỏi đày, xin cho chúng con được thấy Đức Chúa Giêsu con lòng Bà gồm phúc lạ Ôi khoan thay, nhân thay, dịu thay, Thánh Maria trọn đời đồng trinh. Amen`
   },
   {
@@ -482,13 +482,32 @@ Thứ bảy, cầu cho kẻ sống và kẻ chết.`
     Lạy Đức Chúa Trời đã ban cho chúng con được kính mừng (Nếu là ngày 24/6 thì đọc thêm: ngày hôm nay là sinh nhật) Ông thánh Gioan Baotixita,/ thì chúng con xin Đức Chúa Trời ban cho các dân người,/ được hưởng những sự vui mừng thiêng liêng / bởi ơn thánh sủng mà ra,/ cùng dẫn linh hồn các bổn đạo vào đàng rỗi mà nghỉ vô cùng./ Vì Đức Chúa Giêsu Kitô là Chúa chúng con./ Amen.`
   }
 ]
+function _formatString(str: string) {
+  return str.
+    toLowerCase()
+    .replace(/à|á|á|ạ|ạ|ả|ã|â|ầ|ấ|ậ|ẩ|ẫ|ă|ằ|ắ|ặ|ẳ|ẵ|á/g, "a")
+    .replace(/è|é|ẹ|ẻ|ẽ|ê|ề|ế|ệ|ể|ễ/g, "e")
+    .replace(/ì|í|ị|ỉ|ĩ/g, "i")
+    .replace(/ò|ó|ọ|ỏ|õ|ô|ồ|ố|ộ|ổ|ỗ|ọ|ơ|ờ|ớ|ợ|ở|ỡ|ờ|ờ|ò/g, "o")
+    .replace(/ù|ú|ụ|ủ|ũ|ư|ừ|ứ|ự|ử|ữ|ũ/g, "u")
+    .replace(/ỳ|ý|ỵ|ỷ|ỹ/g, "y")
+    .replace(/đ/g, "d")
+}
+
 
 export default function Home() {
 
-  const [search, s] = useState<string>()
+  const [search, s] = useState<string>('')
   const { colorMode } = useColorMode()
 
   const list = BibleList.map((b, index) => ({ ...b, index }))
+
+  const filter_by_search = (v: string) => {
+    const a = _formatString(v)
+    const b = _formatString(search)
+    console.log({ a }, b)
+    return a.includes(b)
+  }
 
   return (
     <VStack spacing='5' pt='10'>
@@ -505,13 +524,13 @@ export default function Home() {
           <VStack w='full' spacing='5'>
             {
               list
-                .filter(v => search ? v.name.toLocaleLowerCase().includes(search.toLocaleLowerCase().trim()) : true)
+                .filter(v => search ? filter_by_search(v.name) : true)
                 .map(({ name, star, index }) => (
                   <HStack w='full'>
                     <Link href={`#index-${index}`} id={`menu-${index}`}>
                       <HStack w='full'>
                         <Tag >{index + 1}</Tag>
-                        <Text color={star ? 'orange':(colorMode == 'dark' ? 'white' : 'black')} textAlign='left'>
+                        <Text color={star ? 'orange' : (colorMode == 'dark' ? 'white' : 'black')} textAlign='left'>
                           {name}
                         </Text>
                         {star && <AiFillStar color='orange' size='25' />}
