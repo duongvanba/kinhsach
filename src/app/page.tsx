@@ -5,10 +5,11 @@ import { Box, Button, Card, CardBody, CardHeader, Center, CloseButton, HStack, H
 import Link from 'next/link'
 import { BiMoon, BiSolidSun, BiSolidUpvote } from 'react-icons/bi'
 import { AiFillStar, AiOutlineStar, AiTwotoneStar } from 'react-icons/ai'
+import {BsFillCaretUpFill } from 'react-icons/bs'
 import { ChangeColorMode } from './ChangeColorMode'
 import { useState } from 'react'
 import { SearchBox } from './SearchBox'
-
+import ScrollToTop from "react-scroll-to-top";
 
 const BibleList = [
   {
@@ -511,6 +512,7 @@ export default function Home() {
 
   return (
     <VStack spacing='5' pt='10'>
+       <ScrollToTop smooth color="teal" />
       <ChangeColorMode />
       <Card w='full'>
         <CardHeader p='5' pb='0'>
@@ -526,7 +528,7 @@ export default function Home() {
               list
                 .filter(v => search ? filter_by_search(v.name) : true)
                 .map(({ name, star, index }) => (
-                  <HStack w='full'>
+                  <HStack w='full' key={name}>
                     <Link href={`#index-${index}`} id={`menu-${index}`}>
                       <HStack w='full'>
                         <Tag >{index + 1}</Tag>
