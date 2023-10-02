@@ -5,7 +5,7 @@ import { Box, Button, Card, CardBody, CardHeader, Center, CloseButton, HStack, H
 import Link from 'next/link'
 import { BiMoon, BiSolidSun, BiSolidUpvote } from 'react-icons/bi'
 import { AiFillStar, AiOutlineStar, AiTwotoneStar } from 'react-icons/ai'
-import {BsFillCaretUpFill } from 'react-icons/bs'
+import { BsFillCaretUpFill } from 'react-icons/bs'
 import { ChangeColorMode } from './ChangeColorMode'
 import { useState } from 'react'
 import { SearchBox } from './SearchBox'
@@ -108,9 +108,7 @@ const BibleList = [
     name: 'Kinh Vực Sâu',
     content: `Lạy Chúa, con ở dưới vực sâu kêu lên Chúa, xin Chúa hãy thương nhậm lời con kêu van, hãy lắng nghe tiếng con cầu xin. Nếu Chúa chấp tội, nào ai rỗi được? Bởi Chúa hằng có lòng lành, cùng vì lời Chúa phán hứa, con đã trông cậy Chúa. Linh hồn con cậy vì lời hứa ấy thì đã trông cậy Chúa. Những kẻ làm dân Đức Chúa Trời, đêm ngày hãy trông cậy Người cho liên, vì Người rất nhân lành hay thương vô cùng, sẽ tha hết mọi tội lỗi kẻ làm dân Người thay thảy.
 
-  Lạy Chúa, xin ban cho các linh hồn (hoặc linh hồn ... ) được nghỉ ngơi đời đời, và được sáng soi vô cùng. Lạy Chúa, xin cứu lấy các linh hồn (hoặc linh hồn [...] ) cho khỏi tù ngục mà được nghỉ yên. Amen.
-  
-  Lạy ơn Đức Chúa Giêsu, Chúa đã phán dạy rằng, con hãy xin thì con sẽ được. Vậy con xin Chúa lòng lành vô cùng thương đến các linh hồn nơi luyện tội. Xin Chúa nghe lời con cầu xin kêu van, cho linh hồn ông bà, cha mẹ, anh em, bạn hữu con. Xin Chúa mở cửa thiên đàng cho các linh hồn ấy vào. Xin cho các linh hồn ấy được sự sống vô cùng hằng soi cho liên. Amen.`,
+  Lạy Chúa, xin ban cho các linh hồn (hoặc linh hồn ... ) được nghỉ ngơi đời đời, và được sáng soi vô cùng. Lạy Chúa, xin cứu lấy các linh hồn (hoặc linh hồn [...] ) cho khỏi tù ngục mà được nghỉ yên. Amen`,
     star: true
   },
   {
@@ -270,48 +268,48 @@ Thứ bảy, cầu cho kẻ sống và kẻ chết.`
     Thứ tám: ai chịu khốn nạn vì đạo ngay, ấy là phúc thật, vì chưng nước Đức Chúa Trời là của mình vậy.`,
     star: true
   },
- 
+
   {
     name: ' NĂM SỰ VUI',
-    content: `Thứ nhất: Thiên Thần truyền tin cho Đức Bà chịu thai. Ta hãy xin cho được ở khiêm nhường.
+    content: `Thứ nhất thì ngắm: Thiên Thần truyền tin cho Đức Bà chịu thai. Ta hãy xin cho được ở khiêm nhường.
 
-    Thứ hai: Đức Bà đi viếng Bà thánh Isave. Ta hãy xin cho được lòng yêu người.
+    Thứ hai thì ngắm: Đức Bà đi viếng Bà thánh Isave. Ta hãy xin cho được lòng yêu người.
     
-    Thứ ba: Đức Bà sinh Đức Chúa Giêsu nơi hang đá. Ta hãy xin cho được lòng khó khăn.
+    Thứ ba thì ngắm: Đức Bà sinh Đức Chúa Giêsu nơi hang đá. Ta hãy xin cho được lòng khó khăn.
     
-    Thứ tư: Đức Bà dâng Đức Chúa Giêsu trong Đền Thánh. Ta hãy xin cho được vâng lời chịu lụy.
+    Thứ tư thì ngắm: Đức Bà dâng Đức Chúa Giêsu trong Đền Thánh. Ta hãy xin cho được vâng lời chịu lụy.
     
-    Thứ năm: Đức Bà tìm được Đức Chúa Giêsu trong Đền Thánh. Ta hãy xin cho được giữ nghĩa cùng Chúa luôn.`,
+    Thứ năm thì ngắm: Đức Bà tìm được Đức Chúa Giêsu trong Đền Thánh. Ta hãy xin cho được giữ nghĩa cùng Chúa luôn.`,
     star: true
   },
   {
     name: 'Năm Sự Thương',
     content: `NĂM SỰ THƯƠNG
 
-    Thứ nhất: Đức Chúa Giêsu lo buồn đổ mồ hôi máu. Ta hãy xin cho được ăn năn tội nên.
+    Thứ nhất thì ngắm: Đức Chúa Giêsu lo buồn đổ mồ hôi máu. Ta hãy xin cho được ăn năn tội nên.
     
-    Thứ hai: Đức Chúa Giêsu chịu đánh đòn. Ta hãy xin cho được hãm mình chịu khó bằng lòng.
+    Thứ hai thì ngắm: Đức Chúa Giêsu chịu đánh đòn. Ta hãy xin cho được hãm mình chịu khó bằng lòng.
     
-    Thứ ba: Đức Chúa Giêsu chịu đội mão gai. Ta hãy xin cho được chịu mọi sự sỉ nhục bằng lòng.
+    Thứ ba thì ngắm: Đức Chúa Giêsu chịu đội mão gai. Ta hãy xin cho được chịu mọi sự sỉ nhục bằng lòng.
     
-    Thứ tư: Đức Chúa Giêsu vác cây Thánh Giá. Ta hãy xin cho được vác Thánh Giá theo chân Chúa.
+    Thứ tư thì ngắm: Đức Chúa Giêsu vác cây Thánh Giá. Ta hãy xin cho được vác Thánh Giá theo chân Chúa.
     
-    Thứ năm: Đức Chúa Giêsu chịu chết trên cây Thánh Giá. Ta hãy xin cho được đóng đinh tính xác thịt vào Thánh Giá Chúa.`,
+    Thứ năm thì ngắm: Đức Chúa Giêsu chịu chết trên cây Thánh Giá. Ta hãy xin cho được đóng đinh tính xác thịt vào Thánh Giá Chúa.`,
     star: true
   },
   {
     name: 'Năm Sự Mừng',
     content: `NĂM SỰ MỪNG
 
-    Thứ nhất: Đức Chúa Giêsu sống lại. Ta hãy xin cho được sống lại thật về phần linh hồn.
+    Thứ nhất thì ngắm: Đức Chúa Giêsu sống lại. Ta hãy xin cho được sống lại thật về phần linh hồn.
     
-    Thứ hai: Đức Chúa Giêsu lên trời. Ta hãy xin cho được lòng ái mộ những sự trên trời.
+    Thứ hai thì ngắm: Đức Chúa Giêsu lên trời. Ta hãy xin cho được lòng ái mộ những sự trên trời.
     
-    Thứ ba: Đức Chúa Thánh Thần hiện xuống. Ta hãy xin cho được lòng đầy dẫy mọi ơn Đức Chúa Thánh Thần.
+    Thứ ba thì ngắm: Đức Chúa Thánh Thần hiện xuống. Ta hãy xin cho được lòng đầy dẫy mọi ơn Đức Chúa Thánh Thần.
     
-    Thứ tư: Đức Chúa Trời cho Đức Bà lên trời. Ta hãy xin ơn chết lành trong tay Đức Mẹ.
+    Thứ tư thì ngắm: Đức Chúa Trời cho Đức Bà lên trời. Ta hãy xin ơn chết lành trong tay Đức Mẹ.
     
-    Thứ năm: Đức Chúa Trời thưởng Đức Mẹ trên trời. Ta hãy xin Đức Mẹ phù hộ cho ta được thưởng cùng Đức Mẹ trên nước thiên đàng.
+    Thứ năm thì ngắm: Đức Chúa Trời thưởng Đức Mẹ trên trời. Ta hãy xin Đức Mẹ phù hộ cho ta được thưởng cùng Đức Mẹ trên nước thiên đàng.
     `,
     star: true
   },
@@ -319,15 +317,15 @@ Thứ bảy, cầu cho kẻ sống và kẻ chết.`
     name: 'Năm Sự Sáng',
     content: `NĂM SỰ SÁNG
 
-    Thứ nhất: Đức Chúa Giêsu chịu phép Rửa tại sông Giođan. Ta hãy xin cho được sống xứng đáng là con cái Chúa.
+    Thứ nhất thì ngắm: Đức Chúa Giêsu chịu phép Rửa tại sông Giođan. Ta hãy xin cho được sống xứng đáng là con Thiên Chúa.
     
-    Thứ hai: Đức Chúa Giêsu dự tiệc cưới Cana. Ta hãy xin cho được vững tin vào quyền năng của Ngài.
+    Thứ hai thì ngắm: Đức Chúa Giêsu làm phép lạ tại tiệc cưới Cana. Ta hãy xin cho noi gương Đức Mẹ mà vững tin vào Chúa.
     
-    Thứ ba: Đức Chúa Giêsu rao giảng Nước Trời và kêu gọi sám hối. Ta hãy xin cho được hoán cải và đón nhận Tin Mừng.
+    Thứ ba thì ngắm: Đức Chúa Giêsu rao giảng Nước Trời và kêu gọi sám hối. Ta hãy xin cho được tin vào lòng Chúa thương xót và siêng năng lĩnh nhận bí tích Giao Hoà.
     
-    Thứ tư: Đức Chúa Giêsu biến hình trên núi. Ta hãy xin cho được lắng nghe và thực hành lời Chúa.
+    Thứ tư thì ngắm: Đức Chúa Giêsu biến hình trên núi. Ta hãy xin cho được biến đổi nhờ Chúa Thánh Thần.
     
-    Thứ năm: Đức Chúa Giêsu lập bí tích Thánh Thể. Ta hãy xin cho được năng kết hợp cùng Chúa Giêsu Thánh Thể.`,
+    Thứ năm thì ngắm: Đức Chúa Giêsu lập bí tích Thánh Thể. Ta hãy xin cho được sốt sắng tham dự thánh lễ và rước Mình Máu Thánh Ngài`,
     star: true
   },
   {
@@ -513,7 +511,7 @@ export default function Home() {
 
   return (
     <VStack spacing='5' pt='10'>
-       <ScrollToTop smooth color="teal" />
+      <ScrollToTop smooth color="teal" />
       <ChangeColorMode />
       <Card w='full'>
         <CardHeader p='5' pb='0'>
