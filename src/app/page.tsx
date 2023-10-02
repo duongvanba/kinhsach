@@ -270,22 +270,7 @@ Thứ bảy, cầu cho kẻ sống và kẻ chết.`
     Thứ tám: ai chịu khốn nạn vì đạo ngay, ấy là phúc thật, vì chưng nước Đức Chúa Trời là của mình vậy.`,
     star: true
   },
-  {
-    name: 'Năm Sự Mừng',
-    content: `NĂM SỰ MỪNG
-
-    Thứ nhất: Đức Chúa Giêsu sống lại. Ta hãy xin cho được sống lại thật về phần linh hồn.
-    
-    Thứ hai: Đức Chúa Giêsu lên trời. Ta hãy xin cho được lòng ái mộ những sự trên trời.
-    
-    Thứ ba: Đức Chúa Thánh Thần hiện xuống. Ta hãy xin cho được lòng đầy dẫy mọi ơn Đức Chúa Thánh Thần.
-    
-    Thứ tư: Đức Chúa Trời cho Đức Bà lên trời. Ta hãy xin ơn chết lành trong tay Đức Mẹ.
-    
-    Thứ năm: Đức Chúa Trời thưởng Đức Mẹ trên trời. Ta hãy xin Đức Mẹ phù hộ cho ta được thưởng cùng Đức Mẹ trên nước thiên đàng.
-    `,
-    star: true
-  },
+ 
   {
     name: ' NĂM SỰ VUI',
     content: `Thứ nhất: Thiên Thần truyền tin cho Đức Bà chịu thai. Ta hãy xin cho được ở khiêm nhường.
@@ -312,6 +297,22 @@ Thứ bảy, cầu cho kẻ sống và kẻ chết.`
     Thứ tư: Đức Chúa Giêsu vác cây Thánh Giá. Ta hãy xin cho được vác Thánh Giá theo chân Chúa.
     
     Thứ năm: Đức Chúa Giêsu chịu chết trên cây Thánh Giá. Ta hãy xin cho được đóng đinh tính xác thịt vào Thánh Giá Chúa.`,
+    star: true
+  },
+  {
+    name: 'Năm Sự Mừng',
+    content: `NĂM SỰ MỪNG
+
+    Thứ nhất: Đức Chúa Giêsu sống lại. Ta hãy xin cho được sống lại thật về phần linh hồn.
+    
+    Thứ hai: Đức Chúa Giêsu lên trời. Ta hãy xin cho được lòng ái mộ những sự trên trời.
+    
+    Thứ ba: Đức Chúa Thánh Thần hiện xuống. Ta hãy xin cho được lòng đầy dẫy mọi ơn Đức Chúa Thánh Thần.
+    
+    Thứ tư: Đức Chúa Trời cho Đức Bà lên trời. Ta hãy xin ơn chết lành trong tay Đức Mẹ.
+    
+    Thứ năm: Đức Chúa Trời thưởng Đức Mẹ trên trời. Ta hãy xin Đức Mẹ phù hộ cho ta được thưởng cùng Đức Mẹ trên nước thiên đàng.
+    `,
     star: true
   },
   {
